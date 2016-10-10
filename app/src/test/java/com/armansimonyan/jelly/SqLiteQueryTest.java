@@ -9,10 +9,10 @@ import static org.junit.Assert.assertThat;
  * @author armansimonyan
  */
 
-public class QueryTest {
+public class SqLiteQueryTest {
 	@Test
 	public void testEvaluate() throws Exception {
-		Query query = new Query(
+		Query query = new SqLiteQuery(
 				Where.or(
 						Where.and(
 								Where.gt("age", 13),
